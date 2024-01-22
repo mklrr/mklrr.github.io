@@ -69,6 +69,7 @@ header {
     justify-content: center;
    background-color: #dddddd;
     color: white;
+    margin: 5px 0px;
   }
 
   .social a {
