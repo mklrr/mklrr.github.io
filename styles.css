@@ -25,9 +25,8 @@ p {
 header {
     
     align-content: center;
-    
     height: 150px;
-    margin: 10px;
+    margin: 10px 0px;
     border-width: 0px;
     display: flex;
     justify-content: space-evenly;
