@@ -23,18 +23,18 @@ p {
 }
 
 header {
-    
     align-content: center;
     height: 150px;
     margin: 10px 0px;
     border-width: 0px;
     display: flex;
     justify-content: space-evenly;
+    
   }
 
   .h-title  {
     background-color: #92cff2;
-    width: 1000px;
+    width: 100%;
     font-size: 50px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -45,21 +45,47 @@ header {
         height: 90px;
     }
     .h-title {
-    font-size: 30px;
+    font-size: 25px;
    }
   }
 
+  
+
   .content {
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
    flex-direction: column;
    flex-wrap: wrap;
    align-items: center;
   }
 
-  .content img {
-    width: 100%;
+  .album {
+ 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   
+   margin: 10px 10px;
+   
+
+  }
+
+  .album img {
     height: auto;
+    width: 100%;
+    margin: 10px 0px;
+   
+    
+    
+   
+  }
+
+  .content img {
+    height: auto;
+    width: 100%;
   }
 
   .social {
@@ -67,16 +93,58 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-   background-color: #dddddd;
+    background-color: #dddddd;
     color: white;
     margin: 5px 0px;
+    
+    
   }
 
   .social a {
-    padding: 25px 50px;
+    padding: 25px 40px;
     font-size: 40px;
     width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
+    transition: 0.3s;
+  }
+
+  .social a:hover {
+    transform: scale(1.25);
+  }
+
+  .shadow-m {
+    box-shadow: 5px 5px 3px #a1a1a1;
+  }
+
+  .banner-parallax {
+ 
+    background-image: url("main.jpg");
+    min-height: 750px; 
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 100px;
+  }
+
+  .header-spacer {
+    margin-bottom: 100px;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    
+   .h-title {
+      width: 1000px;
+   }
+
+   .content img {
+    width: 1000px;;
+   }
+
+   .social {
+     width: 1000px;
+    }
   }
